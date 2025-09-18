@@ -38,7 +38,6 @@ class ProductController extends Controller
 
     public function destroy($id)
     {
-        $this->service->delete($id);
-        return response()->json(null, 204);
+        return $this->service->delete($id);   
     }
 }
